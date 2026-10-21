@@ -74,6 +74,96 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-left: 3px solid #008f7a;
+  border-radius: 0 4px 4px 0;
+  background-color: white;
+}
+
+.participants h5 {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+.participants ul {
+  display: grid;
+  gap: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+.participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #4b5563;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.participant-list li span {
+  min-width: 0;
+}
+
+.participants .empty-participants {
+  color: #777;
+}
+
+.remove-participant {
+  display: inline-grid;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #e0b8b8;
+  border-radius: 4px;
+  background: white;
+  color: #a33a3a;
+}
+
+.trash-icon {
+  position: relative;
+  width: 10px;
+  height: 12px;
+  border: 1.5px solid currentColor;
+  border-top: 0;
+  border-radius: 0 0 2px 2px;
+}
+
+.trash-icon::before,
+.trash-icon::after {
+  position: absolute;
+  content: "";
+  background: currentColor;
+}
+
+.trash-icon::before {
+  top: -3px;
+  left: -3px;
+  width: 14px;
+  height: 1.5px;
+}
+
+.trash-icon::after {
+  top: -5px;
+  left: 2px;
+  width: 4px;
+  height: 2px;
+  border: 1.5px solid currentColor;
+  border-bottom: 0;
+  border-radius: 2px 2px 0 0;
+}
+
+.remove-participant:hover {
+  border-color: #a33a3a;
+  background: #fff1f1;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
